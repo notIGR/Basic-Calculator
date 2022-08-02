@@ -51,8 +51,9 @@ function reducer(state, { type, payload }) {
           previousOperand: state.currentOperand,
           currentOperand: null,
         }
+        case ACTIONS.CLEAR:
+          return {}
       }
-
   }
 }
 
@@ -72,6 +73,7 @@ function App() {
       </div>
       <button
         className="span-two"
+        onClick={() => dispatch({ type: ACTIONS.CLEAR })}
       >
         AC
       </button>
