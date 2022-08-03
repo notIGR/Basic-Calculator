@@ -12,7 +12,7 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled(Link)`
-color: #fff;
+color: ##77bb0a;
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -58,7 +58,7 @@ margin-right: 24px;
 }
 `
 
-export const NavBtnLink = styled(link)`
+export const NavBtnLink = styled(Link)`
 border-radius: 4px;
 background: #256cel;
 padding: 10px 22px;

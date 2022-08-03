@@ -2,6 +2,8 @@ import { useReducer } from "react"
 import DigitButton from "./components/digit-button"
 import OperationButton from "./components/operations-button"
 import "./styles.css"
+import { BrowserRouter as Router} from 'react-router-dom'
+import Navbar from "./components/nav-bar/index"
 
 export const ACTIONS = {
   ADD_DIGIT: "add-digit",
@@ -135,6 +137,9 @@ function App() {
   )
 
   return (
+    <Router>
+      <Navbar />
+    
     <div className="calculator-grid">
       <div className="output">
         <div className="previous-operand">
@@ -172,6 +177,7 @@ function App() {
         =
       </button>
     </div>
+    </Router>
   )
 }
 
