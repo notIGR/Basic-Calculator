@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './navBar';
+import {Nav, NavLink, NavMenu, NavBtn, NavBtnLink} from './navBar';
 
 const Navbar= () => {
 
@@ -9,21 +9,12 @@ const Navbar= () => {
                 <NavLink to="/">
                 <h1>CalcThis!</h1>
                 </NavLink>
-                <Bars>
-
-                </Bars>
                 <NavMenu>
                     <NavLink to="/about" activeStyle>
                         About
                     </NavLink>
-                    <NavLink to="/services" activeStyle>
-                        services
-                    </NavLink>
                     <NavLink to="/contact-us" activeStyle>
                         contact
-                    </NavLink>
-                    <NavLink to="/sign-up" activeStyle>
-                        sign up
                     </NavLink>
                 </NavMenu>
                 <NavBtn>
